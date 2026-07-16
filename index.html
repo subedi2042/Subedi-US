@@ -75,13 +75,18 @@
     position:absolute; left:50%; bottom:-34px; transform:translateX(-50%);
     width:150px; height:190px; z-index:3;
   }
+  .hero-word-wrap{position:relative; margin-bottom:100px;}
   .photo-medallion{
-    position:absolute; left:50%; bottom:-46px; transform:translateX(-50%);
+    position:absolute; left:50%; top:100%; transform:translate(-50%,-50%);
     width:172px; height:172px; z-index:3; border-radius:50%;
     box-shadow:0 0 0 6px var(--cream), 0 0 0 12px var(--mustard), 0 0 0 15px var(--ink);
     overflow:hidden; background:var(--paper);
   }
   .photo-medallion img{width:100%; height:100%; object-fit:cover; display:block;}
+  @media (max-width:560px){
+    .photo-medallion{width:110px; height:110px; box-shadow:0 0 0 4px var(--cream), 0 0 0 8px var(--mustard), 0 0 0 10px var(--ink);}
+    .hero-word-wrap{margin-bottom:70px;}
+  }
   .id-photo{
     width:64px; height:64px; border-radius:50%; overflow:hidden; flex:none;
     box-shadow:0 0 0 3px var(--cream), 0 0 0 5px var(--ink);
@@ -302,9 +307,11 @@
       <p>Riverside, CA<br>Active U.S. Secret Clearance<br><a href="mailto:subedi2042@gmail.com">subedi2042@gmail.com</a></p>
     </div>
 
-    <h1 class="hero-word display">AGILE</h1>
-    <div class="photo-medallion">
-      <img src="profile.png" alt="Dipendra Subedi in U.S. Army uniform">
+    <div class="hero-word-wrap">
+      <h1 class="hero-word display">AGILE</h1>
+      <div class="photo-medallion">
+        <img src="profile.png" alt="Dipendra Subedi in U.S. Army uniform">
+      </div>
     </div>
 
     <p class="hero-sub">Scrum Master &amp; QA/QE Leader, <b>14+ year member of the California Army National Guard</b>, and Ph.D. candidate researching Agile Leadership in Information Technology.</p>
